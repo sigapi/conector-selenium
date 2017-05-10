@@ -7,7 +7,7 @@
 
     <groupId>br.edu.fatecsbc.sigapi</groupId>
     <artifactId>conector-selenium</artifactId>
-    <version>1.0.0</version>
+    <version>development-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <parent>
