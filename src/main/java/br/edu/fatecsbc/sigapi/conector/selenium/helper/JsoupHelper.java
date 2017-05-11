@@ -15,16 +15,16 @@ public class JsoupHelper {
         doc = Jsoup.parse(html);
     }
 
-    public Document getDocument() {
-        return doc;
-    }
-
     public static final JsoupHelper create(final String html) {
         if (StringUtils.isNotBlank(html)) {
             return new JsoupHelper(html);
         }
 
         return null;
+    }
+
+    public Document getDocument() {
+        return doc;
     }
 
     public String getImageSrcById(final String id) {
@@ -43,7 +43,11 @@ public class JsoupHelper {
             }
 
             if (image != null) {
-                return image.attr("src");
+                final String src = StringUtils.trimToNull(image.attr("src"));
+                if (src != null) {
+                    // http://stackoverflow.com/a/26842113
+                    return src.replaceAll("(?<!(http:|https:))[//]+", "/");
+                }
             }
         }
 
@@ -59,11 +63,23 @@ public class JsoupHelper {
     }
 
     public String getTextFromElementById(final String id) {
+        return getTextFromElementById(id, false);
+    }
+
+    public String getTextFromElementById(final String id, final boolean capitalize) {
 
         final Element elementById = getElementById(id);
         if (elementById != null) {
-            final String text = elementById.text();
-            return StringUtils.trimToNull(text);
+
+            String text = elementById.text();
+            text = StringUtils.trimToNull(text);
+
+            if (capitalize) {
+                return StringHelper.capitalize(text);
+            }
+
+            return text;
+
         }
 
         return null;

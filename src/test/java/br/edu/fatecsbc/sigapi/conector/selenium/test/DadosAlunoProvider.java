@@ -26,7 +26,7 @@ public class DadosAlunoProvider {
     private static DadosAluno aluno01() {
 
         final DadosAluno dados = informaticaParaNegociosNoturnoFatecSbc("1760777533");
-        dados.setFoto("https://sigacentropaulasouza.com.br/imagem//ZQ3YVAVR4NXTBKX8UJL6X9KMN35SR5.TMB.JPG");
+        dados.setFoto("https://sigacentropaulasouza.com.br/imagem/ZQ3YVAVR4NXTBKX8UJL6X9KMN35SR5.TMB.JPG");
         desempenho(dados, 8.4F, 76.7F);
 
         // Faltas
@@ -88,7 +88,7 @@ public class DadosAlunoProvider {
     private static DadosAluno aluno02() {
 
         final DadosAluno dados = informaticaParaNegociosNoturnoFatecSbc("263045750");
-        dados.setFoto("https://sigacentropaulasouza.com.br/imagem//WNZXISMNU9AE5RX22TUPJJIMDRHTFN.TMB.JPG");
+        dados.setFoto("https://sigacentropaulasouza.com.br/imagem/WNZXISMNU9AE5RX22TUPJJIMDRHTFN.TMB.JPG");
         desempenho(dados, 7.8F, 76.7F);
 
         return dados;
@@ -97,7 +97,7 @@ public class DadosAlunoProvider {
     private static DadosAluno aluno03() {
 
         final DadosAluno dados = informaticaParaNegociosNoturnoFatecSbc("347785182");
-        dados.setFoto("https://sigacentropaulasouza.com.br/imagem//2PCCJABGYB79ZKQUQCY4QURDSHCWY5.TMB.JPG");
+        dados.setFoto("https://sigacentropaulasouza.com.br/imagem/2PCCJABGYB79ZKQUQCY4QURDSHCWY5.TMB.JPG");
         desempenho(dados, 8.1F, 76.7F);
 
         return dados;
@@ -106,7 +106,7 @@ public class DadosAlunoProvider {
     private static DadosAluno aluno04() {
 
         final DadosAluno dados = informaticaParaNegociosNoturnoFatecSbc("877265991");
-        dados.setFoto("https://sigacentropaulasouza.com.br/imagem//HF8QRG5K4NYQUIZJQU8UY6T6CDCQPP.TMB.JPG");
+        dados.setFoto("https://sigacentropaulasouza.com.br/imagem/HF8QRG5K4NYQUIZJQU8UY6T6CDCQPP.TMB.JPG");
         desempenho(dados, 7.7F, 79F);
 
         return dados;
@@ -116,7 +116,7 @@ public class DadosAlunoProvider {
 
         final DadosAluno dados = aluno01();
         identificacao(dados, "1702532413");
-        dados.setFoto("https://sigacentropaulasouza.com.br/imagem//ZQ3YVAVR4NXTBKX8UJL6X9KMN35SR5.TMB.JPG");
+        dados.setFoto("https://sigacentropaulasouza.com.br/imagem/ZQ3YVAVR4NXTBKX8UJL6X9KMN35SR5.TMB.JPG");
 
         return dados;
     }
@@ -125,7 +125,7 @@ public class DadosAlunoProvider {
 
         final DadosAluno dados = aluno01();
         identificacao(dados, "1702532413");
-        dados.setFoto("https://sigacentropaulasouza.com.br/imagem//ZQ3YVAVR4NXTBKX8UJL6X9KMN35SR5.TMB.JPG");
+        dados.setFoto("https://sigacentropaulasouza.com.br/imagem/ZQ3YVAVR4NXTBKX8UJL6X9KMN35SR5.TMB.JPG");
 
         return dados;
     }
@@ -219,7 +219,7 @@ public class DadosAlunoProvider {
     }
 
     private static void periodoNoturno(final DadosAluno dados) {
-        dados.setPeriodo("Noite");
+        dados.setPeriodo("NOTURNO");
     }
 
 }

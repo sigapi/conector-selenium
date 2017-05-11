@@ -55,6 +55,8 @@ public class DadosCadastraisServiceTest
 
         assertThat(result.getInstituicao()).as("%s: Instituição", hash).isEqualTo(d.getInstituicao());
 
+        assertThat(result.getCurso()).as("%s: Curso", hash).isEqualTo(d.getCurso());
+
         final Turno turno = result.getTurno();
         assertThat(turno).isNotNull();
         assertThat(turno.name()).as("%s: Turno", hash).isEqualToIgnoringCase(d.getPeriodo());
