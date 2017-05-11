@@ -54,7 +54,7 @@
         <dependency.jsoup>1.10.2</dependency.jsoup>
         <dependency.JUnitParams>1.0.6</dependency.JUnitParams>
         <dependency.selenium>2.53.0</dependency.selenium>
-        <dependency.sigapi-conector>1.0.0</dependency.sigapi-conector>
+        <dependency.sigapi-conector>1.0.1</dependency.sigapi-conector>
 
     </properties>
 
