@@ -59,16 +59,18 @@ public class DadosCadastraisService
             return;
         }
 
-        final String nome = helper.getTextFromElementById("span_MPW0039vPRO_PESSOALNOME");
+        final String nome = helper.getTextFromElementById("span_MPW0039vPRO_PESSOALNOME", true);
         final String foto = helper.getImageSrcById("MPW0039FOTO");
         final String ra = helper.getTextFromElementById("span_MPW0039vACD_ALUNOCURSOREGISTROACADEMICOCURSO");
-        final String instituicao = helper.getTextFromElementById("span_vUNI_UNIDADENOME_MPAGE");
+        final String instituicao = helper.getTextFromElementById("span_vUNI_UNIDADENOME_MPAGE", true);
+        final String curso = helper.getTextFromElementById("span_vACD_CURSONOME_MPAGE", true);
         final String periodo = helper.getTextFromElementById("span_vACD_PERIODODESCRICAO_MPAGE");
 
         dadosCadastrais.setNome(nome);
         dadosCadastrais.setFoto(foto);
         dadosCadastrais.setRa(ra);
         dadosCadastrais.setInstituicao(instituicao);
+        dadosCadastrais.setCurso(curso);
         dadosCadastrais.setTurno(Turno.getBySinonimo(periodo));
 
     }
